@@ -1,0 +1,153 @@
+# Log files
+*.log
+/var/log/golden-image-setup.log
+logs/
+*.log.*
+
+# Jenkins
+jenkins_initial_admin_password.txt
+/var/lib/jenkins/
+
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Terraform
+*.tfstate
+*.tfstate.*
+*.tfvars
+.terraform/
+.terraform.lock.hcl
+crash.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+terraform.rc
+.terraformrc
+
+# Ansible
+*.retry
+.ansible/
+*.vault
+
+# AWS
+.aws/
+*.pem
+*.key
+
+# Docker
+docker-compose.override.yml
+.dockerignore
+
+# Kubernetes
+kubeconfig
+*.kubeconfig
+.kube/
+*-kubeconfig.yaml
+
+# Helm
+charts/*.tgz
+.helmignore
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Virtual environments
+.venv
+venv/
+virtualenv/
+
+# IDE and Editor files
+.idea/
+.vscode/
+*.iml
+*.sublime-*
+.project
+.classpath
+.settings/
+
+# OS files
+Thumbs.db
+.DS_Store
+*.bak
+*.backup
+
+# SSH keys
+*.pub
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+
+# Secrets and credentials
+secrets/
+*.secret
+*.credentials
+.env
+.env.*
+!.env.example
+
+# Certificate files
+*.crt
+*.csr
+*.pem
+*.p12
+*.pfx
+
+# ArgoCD
+argocd-initial-admin-secret.txt
+
+# Prometheus & Grafana
+/var/lib/prometheus/
+/etc/prometheus/*.db
+grafana.db
+
+# Minikube
+.minikube/
+
+# Downloaded packages
+*.deb
+*.rpm
+*.tar.gz
+*.zip
+awscliv2.zip
+
+# Node modules (if any)
+node_modules/
+
+# Backup files
+*.old
+*.orig
+
+# Cache directories
+.cache/
+*.cache
